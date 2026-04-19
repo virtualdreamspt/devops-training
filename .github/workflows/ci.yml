@@ -1,0 +1,14 @@
+name: Primeiro Pipeline
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Mostrar ficheiros
+        run: ls -la

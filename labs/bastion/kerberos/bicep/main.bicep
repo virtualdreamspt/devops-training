@@ -311,6 +311,8 @@ resource bastion 'Microsoft.Network/bastionHosts@2023-05-01' = {
   sku: { name: 'Standard' }
   tags: tags
   properties: {
+    // Kerberos authentication support — required for this lab
+    enableKerberos: true
     ipConfigurations: [
       {
         name: 'DEMO-BASTION-IPConfig'

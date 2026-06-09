@@ -255,6 +255,9 @@ resource "azurerm_bastion_host" "demo" {
   resource_group_name = azurerm_resource_group.demo.name
   sku                 = "Standard"
 
+  # Kerberos authentication support — required for this lab
+  kerberos_enabled = true
+
   ip_configuration {
     name                 = "DEMO-BASTION-IPConfig"
     subnet_id            = azurerm_subnet.us_bastion.id

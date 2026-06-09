@@ -1,0 +1,14 @@
+# terraform.tfvars.example
+# Copy this to terraform.tfvars and fill in your values before running terraform apply.
+
+admin_username        = "demoadmin"
+admin_password        = "REPLACE_WITH_STRONG_PASSWORD"   # min 12 chars, upper/lower/digit/special
+
+domain_name           = "demo.local"
+domain_netbios        = "DEMO"
+
+safe_mode_password    = "REPLACE_WITH_DSRM_PASSWORD"
+vpn_shared_key        = "REPLACE_WITH_VPN_PSK"
+
+domain_admin_password = "REPLACE_WITH_DOMAIN_ADMIN_PWD"  # for demo-admin user
+domain_user_password  = "REPLACE_WITH_DOMAIN_USER_PWD"   # for demo-user user
